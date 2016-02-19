@@ -1,27 +1,13 @@
 # kafka-cluster-cookbook
 
-TODO: Enter the cookbook description here.
+I am trying to get a better grasp of the distributed, partitioned message queue called Kafka.  This cookbook is a prototype cluster setup for me to play with and gain a stronger understanding on the subject.
+
 
 ## Supported Platforms
+Only tested with:
 
-TODO: List your supported platforms.
+ * Ubuntu 14.04
 
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['kafka-cluster']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
 
 ## Usage
 
@@ -39,4 +25,4 @@ Include `kafka-cluster` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Daniel Klopp (<YOUR_EMAIL>)
