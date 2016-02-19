@@ -13,10 +13,45 @@ platforms:
   - name: ubuntu-14.04
 
 suites:
-  - name: default
+  - name: kafka-1
     driver:
       network:
         - ["private_network", {ip: "192.168.17.201"}]
     run_list:
-      recipe[kafka-cluster::default]
+      recipe[kafka-cluster::kafka]
+    attributes:
+  - name: kafka-2
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.17.202"}]
+    run_list:
+      recipe[kafka-cluster::kafka]
+    attributes:
+  - name: kafka-3
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.17.203"}]
+    run_list:
+      recipe[kafka-cluster::kafka]
+    attributes:
+  - name: zookeeper-1
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.17.211"}]
+    run_list:
+      recipe[kafka-cluster::zookeeper]
+    attributes:
+  - name: zookeeper-2
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.17.212"}]
+    run_list:
+      recipe[kafka-cluster::zookeeper]
+    attributes:
+  - name: zookeeper-3
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.17.213"}]
+    run_list:
+      recipe[kafka-cluster::zookeeper]
     attributes:
