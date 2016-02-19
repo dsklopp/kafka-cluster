@@ -6,4 +6,6 @@ description      'Installs/Configures kafka-cluster'
 long_description 'Installs/Configures kafka-cluster'
 version          '0.1.0'
 
-
+depends 'apt'
+depends 'java'
+depends 'kafka'
