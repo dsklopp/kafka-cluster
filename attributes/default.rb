@@ -1,0 +1,1 @@
+default['kafka-cluster']['zookeeper_id']=0

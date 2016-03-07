@@ -41,6 +41,8 @@ suites:
     run_list:
       recipe[kafka-cluster::zookeeper]
     attributes:
+      kafka-cluster:
+        zookeeper_id: 1
   - name: zookeeper-2
     driver:
       network:
@@ -48,6 +50,8 @@ suites:
     run_list:
       recipe[kafka-cluster::zookeeper]
     attributes:
+      kafka-cluster:
+        zookeeper_id: 2
   - name: zookeeper-3
     driver:
       network:
@@ -55,3 +59,5 @@ suites:
     run_list:
       recipe[kafka-cluster::zookeeper]
     attributes:
+      kafka-cluster:
+        zookeeper_id: 3
